@@ -7,8 +7,8 @@ CFLAGS= -Wall -pedantic --std=gnu99 -g
 slowcat: slowcat.c
 	$(CC) $(CFLAGS) slowcat.c -o slowcat
 
-#install:
-#	ln -sf ./slowcat /usr/bin/slowcat
+install:
+	cp ./slowcat /usr/local/bin/slowcat
 
 clean:
 	rm -f slowcat *.o
