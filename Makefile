@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS= -Wall -pedantic --std=gnu99 -g
 
-.PHONY: slowcat clean #install
+.PHONY: slowcat clean
 .DEFAULT_GOAL := slowcat
 
 slowcat: slowcat.c
