@@ -65,6 +65,7 @@ main(int argc, char **argv)
         line = take_line(src);
         if (feof(src) || ferror(src)) break;
         printf("%s\n", line);
+        fflush(stdin);
         free(line);
         usleep(count);
     }
